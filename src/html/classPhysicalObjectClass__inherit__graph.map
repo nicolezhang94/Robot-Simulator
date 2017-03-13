@@ -1,0 +1,5 @@
+<map id="PhysicalObjectClass" name="PhysicalObjectClass">
+<area shape="rect" id="node2" href="$classObstacleClass.html" title="{ObstacleClass\n||+ ObstacleClass()\l+ ObstacleClass()\l+ ObstacleClass()\l+ setInitLocation()\l+ setLocation()\l}" alt="" coords="5,616,133,752"/>
+<area shape="rect" id="node3" href="$classRobotClass.html" title="{RobotClass\n|# targetPair\l|+ RobotClass()\l+ RobotClass()\l+ ~RobotClass()\l+ setInitLocation()\l+ setLocation()\l+ setTargetPair()\l+ getTargetPair()\l+ getTarget()\l+ rotate()\l+ translate()\l+ updateLocation()\l+ pointTo()\l+ updatePosition()\l}" alt="" coords="157,557,287,811"/>
+<area shape="rect" id="node4" href="$classTargetClass.html" title="{TargetClass\n||+ TargetClass()\l+ TargetClass()\l+ setLocation()\l}" alt="" coords="313,631,425,737"/>
+</map>

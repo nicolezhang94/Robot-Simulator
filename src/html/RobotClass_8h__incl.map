@@ -1,0 +1,6 @@
+<map id="RobotClass.h" name="RobotClass.h">
+<area shape="rect" id="node2" href="$PhysicalObjectClass_8h.html" title="The physical world containing RobotClass, TargetClass, and ObstacleClass objects. ..." alt="" coords="5,229,159,256"/>
+<area shape="rect" id="node3" href="$TargetClass_8h.html" title="Holds information about targets. " alt="" coords="31,155,135,181"/>
+<area shape="rect" id="node6" href="$EnvironmentClass_8h.html" title="Manages and controls object movement and behavior. " alt="" coords="206,80,345,107"/>
+<area shape="rect" id="node7" href="$ObstacleClass_8h.html" title="Holds information about obstacles. " alt="" coords="329,155,447,181"/>
+</map>

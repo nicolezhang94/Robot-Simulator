@@ -1,0 +1,7 @@
+<map id="RenderingWindowClass.h" name="RenderingWindowClass.h">
+<area shape="rect" id="node2" href="$EnvironmentClass_8cpp.html" title="Manages and controls object movement and behavior. " alt="" coords="4,80,157,107"/>
+<area shape="rect" id="node3" href="$Simulation_8h.html" title="Main application class for the robot simulation. " alt="" coords="183,80,277,107"/>
+<area shape="rect" id="node6" href="$RenderingWindowClass_8cpp.html" title="Interface between the graphics and EnvironmentClass. " alt="" coords="303,80,489,107"/>
+<area shape="rect" id="node4" href="$main_8cpp.html" title="driver file for robot class " alt="" coords="135,155,208,181"/>
+<area shape="rect" id="node5" href="$Simulation_8cpp.html" title="contains Simulation class definitions " alt="" coords="234,155,341,181"/>
+</map>

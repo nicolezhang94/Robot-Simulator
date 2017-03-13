@@ -1,0 +1,9 @@
+<map id="Simulation.h" name="Simulation.h">
+<area shape="rect" id="node2" href="$BaseGfxApp_8h.html" title="The basic application class for CSci&#45;3081 project. Uses GLUT and GLUI and wraps them in a nice C++ in..." alt="" coords="116,80,223,107"/>
+<area shape="rect" id="node7" href="$RobotClass_8h.html" title="The representation of the robot within the simulation. " alt="" coords="435,155,537,181"/>
+<area shape="rect" id="node16" href="$RenderingWindowClass_8h.html" title="Interface between the graphics and EnvironmentClass. " alt="" coords="257,80,431,107"/>
+<area shape="rect" id="node8" href="$PhysicalObjectClass_8h.html" title="The physical world containing RobotClass, TargetClass, and ObstacleClass objects. ..." alt="" coords="360,379,513,405"/>
+<area shape="rect" id="node9" href="$TargetClass_8h.html" title="Holds information about targets. " alt="" coords="207,304,311,331"/>
+<area shape="rect" id="node11" href="$EnvironmentClass_8h.html" title="Manages and controls object movement and behavior. " alt="" coords="530,229,669,256"/>
+<area shape="rect" id="node12" href="$ObstacleClass_8h.html" title="Holds information about obstacles. " alt="" coords="335,304,453,331"/>
+</map>

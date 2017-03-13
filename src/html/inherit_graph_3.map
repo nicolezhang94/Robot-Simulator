@@ -1,0 +1,6 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classPhysicalObjectClass.html" title="PhysicalObjectClass" alt="" coords="5,56,149,83"/>
+<area shape="rect" id="node2" href="$classObstacleClass.html" title="ObstacleClass" alt="" coords="198,5,306,32"/>
+<area shape="rect" id="node3" href="$classRobotClass.html" title="RobotClass" alt="" coords="207,56,297,83"/>
+<area shape="rect" id="node4" href="$classTargetClass.html" title="TargetClass" alt="" coords="205,107,299,133"/>
+</map>

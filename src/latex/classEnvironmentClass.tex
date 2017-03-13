@@ -1,0 +1,249 @@
+\hypertarget{classEnvironmentClass}{\section{Environment\-Class Class Reference}
+\label{classEnvironmentClass}\index{Environment\-Class@{Environment\-Class}}
+}
+
+
+Collaboration diagram for Environment\-Class\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=222pt]{classEnvironmentClass__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classEnvironmentClass_aa69ad01551a79f7326f005709061ff31}{\hyperlink{classEnvironmentClass_aa69ad01551a79f7326f005709061ff31}{Environment\-Class} ()}\label{classEnvironmentClass_aa69ad01551a79f7326f005709061ff31}
+
+\begin{DoxyCompactList}\small\item\em default constructor for \hyperlink{classEnvironmentClass}{Environment\-Class} \end{DoxyCompactList}\item 
+void \hyperlink{classEnvironmentClass_a7d992b6ef4e8b95542af1ae775be988a}{update} (double elapsed\-Time)
+\begin{DoxyCompactList}\small\item\em updates each object by calling move, then setting position \end{DoxyCompactList}\item 
+int \hyperlink{classEnvironmentClass_a2c810b4fe1f93852659686ae392b0a8a}{touch\-Sensor\-Reading} (\hyperlink{classPhysicalObjectClass}{Physical\-Object\-Class} $\ast$object)
+\begin{DoxyCompactList}\small\item\em Collision detection. \end{DoxyCompactList}\item 
+void \hyperlink{classEnvironmentClass_a47912774c37cc6185c0b409e4b7789e3}{homing\-Sensor\-Reading} (\hyperlink{classRobotClass}{Robot\-Class} $\ast$robot, \hyperlink{classTargetClass}{Target\-Class} $\ast$target)
+\begin{DoxyCompactList}\small\item\em Determines robot to target orientation. \end{DoxyCompactList}\item 
+void \hyperlink{classEnvironmentClass_a7dd5a652634672bbaf5c00e214add9f6}{reset\-Homing} (\hyperlink{classPhysicalObjectClass}{Physical\-Object\-Class} $\ast$object)
+\begin{DoxyCompactList}\small\item\em Determines robot's corresponding target. \end{DoxyCompactList}\item 
+void \hyperlink{classEnvironmentClass_a862919dd05c8ec626360f11b809bd6ae}{display} ()
+\begin{DoxyCompactList}\small\item\em Draw and displays objects and environment. \end{DoxyCompactList}\item 
+void \hyperlink{classEnvironmentClass_a0fa52a8dd735412f9d46f4e2499e8108}{translate} (\hyperlink{classPhysicalObjectClass}{Physical\-Object\-Class} $\ast$object, double elapsed\-Time)
+\begin{DoxyCompactList}\small\item\em Moves the input object. \end{DoxyCompactList}\item 
+void \hyperlink{classEnvironmentClass_a2073fafc0218848ea81d21138ea702b7}{bounce\-Off\-Wall} (\hyperlink{classPhysicalObjectClass}{Physical\-Object\-Class} $\ast$object)
+\begin{DoxyCompactList}\small\item\em Performs wall collision movement. \end{DoxyCompactList}\item 
+void \hyperlink{classEnvironmentClass_a6ce1e78294fb94ac1fc27cf3ef1f0419}{object\-Collision} (\hyperlink{classPhysicalObjectClass}{Physical\-Object\-Class} $\ast$current\-Object, \hyperlink{classPhysicalObjectClass}{Physical\-Object\-Class} $\ast$hit\-Object, double elapsed\-Time)
+\begin{DoxyCompactList}\small\item\em Object collision management. \end{DoxyCompactList}\item 
+void \hyperlink{classEnvironmentClass_aa57351175592327c191e0d84ef2be6e3}{bounce\-Off\-Object} (\hyperlink{classPhysicalObjectClass}{Physical\-Object\-Class} $\ast$current\-Object, \hyperlink{classPhysicalObjectClass}{Physical\-Object\-Class} $\ast$hit\-Object)
+\begin{DoxyCompactList}\small\item\em Performs object collision movement. \end{DoxyCompactList}\item 
+void \hyperlink{classEnvironmentClass_a564160db6ba48653b24b3a42ce9d2d58}{remove\-Object} (\hyperlink{classPhysicalObjectClass}{Physical\-Object\-Class} $\ast$object)
+\begin{DoxyCompactList}\small\item\em Removes the object from the simulation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classEnvironmentClass_a3735bf3dc818a03984620368f196b1d0}{std\-::vector\\*
+$<$ \hyperlink{classPhysicalObjectClass}{Physical\-Object\-Class} $\ast$ $>$ {\bfseries physical\-Object\-Vector}}\label{classEnvironmentClass_a3735bf3dc818a03984620368f196b1d0}
+
+\item 
+\hypertarget{classEnvironmentClass_a403bb85973a4db56e0163686147dae8b}{\hyperlink{classRenderingWindowClass}{Rendering\-Window\-Class} $\ast$ {\bfseries render\-Env}}\label{classEnvironmentClass_a403bb85973a4db56e0163686147dae8b}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classEnvironmentClass_aa57351175592327c191e0d84ef2be6e3}{\index{Environment\-Class@{Environment\-Class}!bounce\-Off\-Object@{bounce\-Off\-Object}}
+\index{bounce\-Off\-Object@{bounce\-Off\-Object}!EnvironmentClass@{Environment\-Class}}
+\subsubsection[{bounce\-Off\-Object}]{\setlength{\rightskip}{0pt plus 5cm}void Environment\-Class\-::bounce\-Off\-Object (
+\begin{DoxyParamCaption}
+\item[{{\bf Physical\-Object\-Class} $\ast$}]{current\-Object, }
+\item[{{\bf Physical\-Object\-Class} $\ast$}]{hit\-Object}
+\end{DoxyParamCaption}
+)}}\label{classEnvironmentClass_aa57351175592327c191e0d84ef2be6e3}
+
+
+Performs object collision movement. 
+
+This function sets the new orientations of the objects that are colliding to be 90 degrees away from each other.
+
+
+\begin{DoxyParams}{Parameters}
+{\em current\-Object} & the object making the collision \\
+\hline
+{\em hit\-Object} & the object being collided into \\
+\hline
+\end{DoxyParams}
+\hypertarget{classEnvironmentClass_a2073fafc0218848ea81d21138ea702b7}{\index{Environment\-Class@{Environment\-Class}!bounce\-Off\-Wall@{bounce\-Off\-Wall}}
+\index{bounce\-Off\-Wall@{bounce\-Off\-Wall}!EnvironmentClass@{Environment\-Class}}
+\subsubsection[{bounce\-Off\-Wall}]{\setlength{\rightskip}{0pt plus 5cm}void Environment\-Class\-::bounce\-Off\-Wall (
+\begin{DoxyParamCaption}
+\item[{{\bf Physical\-Object\-Class} $\ast$}]{object}
+\end{DoxyParamCaption}
+)}}\label{classEnvironmentClass_a2073fafc0218848ea81d21138ea702b7}
+
+
+Performs wall collision movement. 
+
+This function determines which wall the object is colliding with and which direction it is coming from, and then subsequently changes its orientation to be 90 degrees away from the wall and translated inwards one pixel to remain in the window.
+
+
+\begin{DoxyParams}{Parameters}
+{\em object} & the object that is bouncing off the wall \\
+\hline
+\end{DoxyParams}
+\hypertarget{classEnvironmentClass_a862919dd05c8ec626360f11b809bd6ae}{\index{Environment\-Class@{Environment\-Class}!display@{display}}
+\index{display@{display}!EnvironmentClass@{Environment\-Class}}
+\subsubsection[{display}]{\setlength{\rightskip}{0pt plus 5cm}void Environment\-Class\-::display (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classEnvironmentClass_a862919dd05c8ec626360f11b809bd6ae}
+
+
+Draw and displays objects and environment. 
+
+This function is constantly called from simulation. It displays and draws all the objects and calls the update function and effectively sets up the environment. \hypertarget{classEnvironmentClass_a47912774c37cc6185c0b409e4b7789e3}{\index{Environment\-Class@{Environment\-Class}!homing\-Sensor\-Reading@{homing\-Sensor\-Reading}}
+\index{homing\-Sensor\-Reading@{homing\-Sensor\-Reading}!EnvironmentClass@{Environment\-Class}}
+\subsubsection[{homing\-Sensor\-Reading}]{\setlength{\rightskip}{0pt plus 5cm}void Environment\-Class\-::homing\-Sensor\-Reading (
+\begin{DoxyParamCaption}
+\item[{{\bf Robot\-Class} $\ast$}]{robot, }
+\item[{{\bf Target\-Class} $\ast$}]{target}
+\end{DoxyParamCaption}
+)}}\label{classEnvironmentClass_a47912774c37cc6185c0b409e4b7789e3}
+
+
+Determines robot to target orientation. 
+
+This function takes in a robot-\/target pair and calculates the orientation that points to the target, and then it sets the robot's orientation to that.
+
+
+\begin{DoxyParams}{Parameters}
+{\em robot} & the robot that is trying to home in on target \\
+\hline
+{\em target} & the target that is being homed in on by robot \\
+\hline
+\end{DoxyParams}
+\hypertarget{classEnvironmentClass_a6ce1e78294fb94ac1fc27cf3ef1f0419}{\index{Environment\-Class@{Environment\-Class}!object\-Collision@{object\-Collision}}
+\index{object\-Collision@{object\-Collision}!EnvironmentClass@{Environment\-Class}}
+\subsubsection[{object\-Collision}]{\setlength{\rightskip}{0pt plus 5cm}void Environment\-Class\-::object\-Collision (
+\begin{DoxyParamCaption}
+\item[{{\bf Physical\-Object\-Class} $\ast$}]{current\-Object, }
+\item[{{\bf Physical\-Object\-Class} $\ast$}]{hit\-Object, }
+\item[{double}]{elapsed\-Time}
+\end{DoxyParamCaption}
+)}}\label{classEnvironmentClass_a6ce1e78294fb94ac1fc27cf3ef1f0419}
+
+
+Object collision management. 
+
+This function determines what type of object the current\-Object is colliding into and then subsequently determines its corresponding behavior.
+
+
+\begin{DoxyParams}{Parameters}
+{\em current\-Object} & the object making the collision \\
+\hline
+{\em hit\-Object} & the object being collided into \\
+\hline
+{\em elapsed\-Time} & the amount of time passed \\
+\hline
+\end{DoxyParams}
+\hypertarget{classEnvironmentClass_a564160db6ba48653b24b3a42ce9d2d58}{\index{Environment\-Class@{Environment\-Class}!remove\-Object@{remove\-Object}}
+\index{remove\-Object@{remove\-Object}!EnvironmentClass@{Environment\-Class}}
+\subsubsection[{remove\-Object}]{\setlength{\rightskip}{0pt plus 5cm}void Environment\-Class\-::remove\-Object (
+\begin{DoxyParamCaption}
+\item[{{\bf Physical\-Object\-Class} $\ast$}]{object}
+\end{DoxyParamCaption}
+)}}\label{classEnvironmentClass_a564160db6ba48653b24b3a42ce9d2d58}
+
+
+Removes the object from the simulation. 
+
+This function \char`\"{}removes\char`\"{} the input object from the simulation by setting the should\-Be\-Drawn attribute to 0 and moving the object off screen.
+
+
+\begin{DoxyParams}{Parameters}
+{\em object} & the object that needs removing \\
+\hline
+\end{DoxyParams}
+\hypertarget{classEnvironmentClass_a7dd5a652634672bbaf5c00e214add9f6}{\index{Environment\-Class@{Environment\-Class}!reset\-Homing@{reset\-Homing}}
+\index{reset\-Homing@{reset\-Homing}!EnvironmentClass@{Environment\-Class}}
+\subsubsection[{reset\-Homing}]{\setlength{\rightskip}{0pt plus 5cm}void Environment\-Class\-::reset\-Homing (
+\begin{DoxyParamCaption}
+\item[{{\bf Physical\-Object\-Class} $\ast$}]{object}
+\end{DoxyParamCaption}
+)}}\label{classEnvironmentClass_a7dd5a652634672bbaf5c00e214add9f6}
+
+
+Determines robot's corresponding target. 
+
+This function takes in a robot type object, finds its corresponding target, and calls homing\-Sensor\-Reading with these two objects. This essentially makes sure that the robot will be homing in on its own target and not different one.
+
+
+\begin{DoxyParams}{Parameters}
+{\em object} & whichever robot is requesting homing sensor info \\
+\hline
+\end{DoxyParams}
+\hypertarget{classEnvironmentClass_a2c810b4fe1f93852659686ae392b0a8a}{\index{Environment\-Class@{Environment\-Class}!touch\-Sensor\-Reading@{touch\-Sensor\-Reading}}
+\index{touch\-Sensor\-Reading@{touch\-Sensor\-Reading}!EnvironmentClass@{Environment\-Class}}
+\subsubsection[{touch\-Sensor\-Reading}]{\setlength{\rightskip}{0pt plus 5cm}int Environment\-Class\-::touch\-Sensor\-Reading (
+\begin{DoxyParamCaption}
+\item[{{\bf Physical\-Object\-Class} $\ast$}]{object}
+\end{DoxyParamCaption}
+)}}\label{classEnvironmentClass_a2c810b4fe1f93852659686ae392b0a8a}
+
+
+Collision detection. 
+
+This function takes in an object and checks if that object is colliding with another object or a wall. It returns -\/1 if the object is not colliding with anything, -\/2 if it is colliding with a wall, or the index of the object it is colliding with.
+
+
+\begin{DoxyParams}{Parameters}
+{\em object} & whichever object is requesting touch sensor information \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/1 if the object is not colliding with anything -\/2 if the object is colliding with a wall index of the object the input object is colliding with 
+\end{DoxyReturn}
+\hypertarget{classEnvironmentClass_a0fa52a8dd735412f9d46f4e2499e8108}{\index{Environment\-Class@{Environment\-Class}!translate@{translate}}
+\index{translate@{translate}!EnvironmentClass@{Environment\-Class}}
+\subsubsection[{translate}]{\setlength{\rightskip}{0pt plus 5cm}void Environment\-Class\-::translate (
+\begin{DoxyParamCaption}
+\item[{{\bf Physical\-Object\-Class} $\ast$}]{object, }
+\item[{double}]{elapsed\-Time}
+\end{DoxyParamCaption}
+)}}\label{classEnvironmentClass_a0fa52a8dd735412f9d46f4e2499e8108}
+
+
+Moves the input object. 
+
+This function resets the location of the input object based on its speed, original location, orientation, and elapsed time.
+
+
+\begin{DoxyParams}{Parameters}
+{\em object} & the object being translating \\
+\hline
+{\em elapsed\-Time} & the amount of time passed \\
+\hline
+\end{DoxyParams}
+\hypertarget{classEnvironmentClass_a7d992b6ef4e8b95542af1ae775be988a}{\index{Environment\-Class@{Environment\-Class}!update@{update}}
+\index{update@{update}!EnvironmentClass@{Environment\-Class}}
+\subsubsection[{update}]{\setlength{\rightskip}{0pt plus 5cm}void Environment\-Class\-::update (
+\begin{DoxyParamCaption}
+\item[{double}]{elapsed\-Time}
+\end{DoxyParamCaption}
+)}}\label{classEnvironmentClass_a7d992b6ef4e8b95542af1ae775be988a}
+
+
+updates each object by calling move, then setting position 
+
+This function takes an one argument, elapsed\-Time, and iterates through the physical\-Objects array, calling move each time. Move then returns an double\mbox{[}2\mbox{]} array containing the direction and magnitude of movement. Based on which coordinate the object currently is in, it sets the object's new position.
+
+
+\begin{DoxyParams}{Parameters}
+{\em elapsed\-Time} & the amount of time passed \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{EnvironmentClass_8h}{Environment\-Class.\-h}\item 
+\hyperlink{EnvironmentClass_8cpp}{Environment\-Class.\-cpp}\end{DoxyCompactItemize}

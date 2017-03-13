@@ -1,0 +1,7 @@
+<map id="RenderingWindowClass.h" name="RenderingWindowClass.h">
+<area shape="rect" id="node3" href="$RobotClass_8h.html" title="The representation of the robot within the simulation. " alt="" coords="186,80,288,107"/>
+<area shape="rect" id="node5" href="$TargetClass_8h.html" title="Holds information about targets. " alt="" coords="185,229,289,256"/>
+<area shape="rect" id="node9" href="$ObstacleClass_8h.html" title="Holds information about obstacles. " alt="" coords="566,229,684,256"/>
+<area shape="rect" id="node4" href="$PhysicalObjectClass_8h.html" title="The physical world containing RobotClass, TargetClass, and ObstacleClass objects. ..." alt="" coords="160,304,313,331"/>
+<area shape="rect" id="node8" href="$EnvironmentClass_8h.html" title="Manages and controls object movement and behavior. " alt="" coords="355,155,495,181"/>
+</map>

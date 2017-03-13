@@ -1,0 +1,201 @@
+\hypertarget{classRobotClass}{\section{Robot\-Class Class Reference}
+\label{classRobotClass}\index{Robot\-Class@{Robot\-Class}}
+}
+
+
+Inheritance diagram for Robot\-Class\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classRobotClass__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Robot\-Class\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classRobotClass__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classRobotClass_a7125604039c2a4b39e34e4354bd4ce19}{Robot\-Class} ()
+\begin{DoxyCompactList}\small\item\em Default constructor for \hyperlink{classRobotClass}{Robot\-Class}. \end{DoxyCompactList}\item 
+\hyperlink{classRobotClass_a5fc34d4751e7af1868eefec70ecbe241}{Robot\-Class} (int size\-In, double x, double y)
+\begin{DoxyCompactList}\small\item\em Constructor with three arguments, size\-In, x, and y. \end{DoxyCompactList}\item 
+\hypertarget{classRobotClass_a7d7725737f146f85ed7ceeae7f300e9e}{\hyperlink{classRobotClass_a7d7725737f146f85ed7ceeae7f300e9e}{$\sim$\-Robot\-Class} ()}\label{classRobotClass_a7d7725737f146f85ed7ceeae7f300e9e}
+
+\begin{DoxyCompactList}\small\item\em default deconstructor for \hyperlink{classRobotClass}{Robot\-Class} \end{DoxyCompactList}\item 
+void \hyperlink{classRobotClass_a6e4902a26041b33ed83932a4514bb8c0}{set\-Init\-Location} (double x, double y)
+\begin{DoxyCompactList}\small\item\em Sets the initial robot location. \end{DoxyCompactList}\item 
+\hypertarget{classRobotClass_a264d12c67f65e3eef63a0e90a3b902b1}{void \hyperlink{classRobotClass_a264d12c67f65e3eef63a0e90a3b902b1}{set\-Location} (double x, double y)}\label{classRobotClass_a264d12c67f65e3eef63a0e90a3b902b1}
+
+\begin{DoxyCompactList}\small\item\em Sets the robot location. \end{DoxyCompactList}\item 
+void \hyperlink{classRobotClass_a846281a36ffd93349b2d9df7ef009ba5}{set\-Target\-Pair} (int target)
+\begin{DoxyCompactList}\small\item\em Associates target with robot. \end{DoxyCompactList}\item 
+int \hyperlink{classRobotClass_a6917e8e0466c4fe0e6827d2c1542c012}{get\-Target\-Pair} ()
+\begin{DoxyCompactList}\small\item\em Returns the unique signal of the target to which the robot is paired. \end{DoxyCompactList}\item 
+\hyperlink{classPhysicalObjectClass}{Physical\-Object\-Class} $\ast$ \hyperlink{classRobotClass_a12c66f3be1dd345448398e811ebc5787}{get\-Target} ()
+\begin{DoxyCompactList}\small\item\em Returns the target to which the robot is paired. \end{DoxyCompactList}\item 
+void \hyperlink{classRobotClass_af0a67d59620139069f981da208a7a28d}{rotate} (int degrees)
+\begin{DoxyCompactList}\small\item\em rotates the robot while moving \end{DoxyCompactList}\item 
+\hypertarget{classRobotClass_aea48d75ac942eef8e7d0891784f48e0b}{void \hyperlink{classRobotClass_aea48d75ac942eef8e7d0891784f48e0b}{translate} (int pixels)}\label{classRobotClass_aea48d75ac942eef8e7d0891784f48e0b}
+
+\begin{DoxyCompactList}\small\item\em moves the robot \end{DoxyCompactList}\item 
+\hypertarget{classRobotClass_a1ce57ed179b9816eb492613bcfd65afb}{void \hyperlink{classRobotClass_a1ce57ed179b9816eb492613bcfd65afb}{update\-Location} ()}\label{classRobotClass_a1ce57ed179b9816eb492613bcfd65afb}
+
+\begin{DoxyCompactList}\small\item\em updates robot's position \end{DoxyCompactList}\item 
+\hypertarget{classRobotClass_a5de1615cb1128b98a87cbba7933c11c6}{void \hyperlink{classRobotClass_a5de1615cb1128b98a87cbba7933c11c6}{point\-To} ()}\label{classRobotClass_a5de1615cb1128b98a87cbba7933c11c6}
+
+\begin{DoxyCompactList}\small\item\em sets the orientation of robot to target \end{DoxyCompactList}\item 
+\hypertarget{classRobotClass_a0d57b2a1df5b361d5117f3deb2e3eb4e}{void {\bfseries update\-Position} ()}\label{classRobotClass_a0d57b2a1df5b361d5117f3deb2e3eb4e}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classRobotClass_a6b3abefce8010c6e3b31a7d8546fe3fb}{int {\bfseries target\-Pair}}\label{classRobotClass_a6b3abefce8010c6e3b31a7d8546fe3fb}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classRobotClass_a7125604039c2a4b39e34e4354bd4ce19}{\index{Robot\-Class@{Robot\-Class}!Robot\-Class@{Robot\-Class}}
+\index{Robot\-Class@{Robot\-Class}!RobotClass@{Robot\-Class}}
+\subsubsection[{Robot\-Class}]{\setlength{\rightskip}{0pt plus 5cm}Robot\-Class\-::\-Robot\-Class (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRobotClass_a7125604039c2a4b39e34e4354bd4ce19}
+
+
+Default constructor for \hyperlink{classRobotClass}{Robot\-Class}. 
+
+This constructor takes in no arguments and sets the circle to a random location with size 50 and speed 10 \hypertarget{classRobotClass_a5fc34d4751e7af1868eefec70ecbe241}{\index{Robot\-Class@{Robot\-Class}!Robot\-Class@{Robot\-Class}}
+\index{Robot\-Class@{Robot\-Class}!RobotClass@{Robot\-Class}}
+\subsubsection[{Robot\-Class}]{\setlength{\rightskip}{0pt plus 5cm}Robot\-Class\-::\-Robot\-Class (
+\begin{DoxyParamCaption}
+\item[{int}]{size\-In, }
+\item[{double}]{x, }
+\item[{double}]{y}
+\end{DoxyParamCaption}
+)}}\label{classRobotClass_a5fc34d4751e7af1868eefec70ecbe241}
+
+
+Constructor with three arguments, size\-In, x, and y. 
+
+This constructor takes in three integer arguments. The first, size\-In, determines the size of the robot. The other arguments, x and y, determine its location
+
+
+\begin{DoxyParams}{Parameters}
+{\em size\-In} & integer size of the robot \\
+\hline
+{\em x} & x double location of the robot \\
+\hline
+{\em y} & y double location of the robot \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classRobotClass_a12c66f3be1dd345448398e811ebc5787}{\index{Robot\-Class@{Robot\-Class}!get\-Target@{get\-Target}}
+\index{get\-Target@{get\-Target}!RobotClass@{Robot\-Class}}
+\subsubsection[{get\-Target}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Physical\-Object\-Class} $\ast$ Robot\-Class\-::get\-Target (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRobotClass_a12c66f3be1dd345448398e811ebc5787}
+
+
+Returns the target to which the robot is paired. 
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{classTargetClass}{Target\-Class} target 
+\end{DoxyReturn}
+\hypertarget{classRobotClass_a6917e8e0466c4fe0e6827d2c1542c012}{\index{Robot\-Class@{Robot\-Class}!get\-Target\-Pair@{get\-Target\-Pair}}
+\index{get\-Target\-Pair@{get\-Target\-Pair}!RobotClass@{Robot\-Class}}
+\subsubsection[{get\-Target\-Pair}]{\setlength{\rightskip}{0pt plus 5cm}int Robot\-Class\-::get\-Target\-Pair (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRobotClass_a6917e8e0466c4fe0e6827d2c1542c012}
+
+
+Returns the unique signal of the target to which the robot is paired. 
+
+\begin{DoxyReturn}{Returns}
+integer target\-Pair 
+\end{DoxyReturn}
+\hypertarget{classRobotClass_af0a67d59620139069f981da208a7a28d}{\index{Robot\-Class@{Robot\-Class}!rotate@{rotate}}
+\index{rotate@{rotate}!RobotClass@{Robot\-Class}}
+\subsubsection[{rotate}]{\setlength{\rightskip}{0pt plus 5cm}void Robot\-Class\-::rotate (
+\begin{DoxyParamCaption}
+\item[{int}]{degrees}
+\end{DoxyParamCaption}
+)}}\label{classRobotClass_af0a67d59620139069f981da208a7a28d}
+
+
+rotates the robot while moving 
+
+\begin{DoxyReturn}{Returns}
+true if there's a wall
+
+true if a particular obstacle is close
+
+true if there is an obstacle
+\end{DoxyReturn}
+This function takes in an integer argument, degrees, and rotates the object the amount specified. Positive rotates counter clockwise, the opposite for negative.
+
+
+\begin{DoxyParams}{Parameters}
+{\em degrees} & integer argument specifying rotation amount \\
+\hline
+\end{DoxyParams}
+\hypertarget{classRobotClass_a6e4902a26041b33ed83932a4514bb8c0}{\index{Robot\-Class@{Robot\-Class}!set\-Init\-Location@{set\-Init\-Location}}
+\index{set\-Init\-Location@{set\-Init\-Location}!RobotClass@{Robot\-Class}}
+\subsubsection[{set\-Init\-Location}]{\setlength{\rightskip}{0pt plus 5cm}void Robot\-Class\-::set\-Init\-Location (
+\begin{DoxyParamCaption}
+\item[{double}]{x, }
+\item[{double}]{y}
+\end{DoxyParamCaption}
+)}}\label{classRobotClass_a6e4902a26041b33ed83932a4514bb8c0}
+
+
+Sets the initial robot location. 
+
+Sets the initial robot location, ensuring that the robot will not overlap with any other objects
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & x double location of the robot \\
+\hline
+{\em y} & y double location of the robot \\
+\hline
+\end{DoxyParams}
+\hypertarget{classRobotClass_a846281a36ffd93349b2d9df7ef009ba5}{\index{Robot\-Class@{Robot\-Class}!set\-Target\-Pair@{set\-Target\-Pair}}
+\index{set\-Target\-Pair@{set\-Target\-Pair}!RobotClass@{Robot\-Class}}
+\subsubsection[{set\-Target\-Pair}]{\setlength{\rightskip}{0pt plus 5cm}void Robot\-Class\-::set\-Target\-Pair (
+\begin{DoxyParamCaption}
+\item[{int}]{target}
+\end{DoxyParamCaption}
+)}}\label{classRobotClass_a846281a36ffd93349b2d9df7ef009ba5}
+
+
+Associates target with robot. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em target} & integer representation of a target \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{RobotClass_8h}{Robot\-Class.\-h}\item 
+\hyperlink{RobotClass_8cpp}{Robot\-Class.\-cpp}\end{DoxyCompactItemize}
